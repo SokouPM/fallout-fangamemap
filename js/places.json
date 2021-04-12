@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Stade de France",
+        "icon": "foot.png",
+        "locationX": 380,
+        "locationY": 287,
+        "class": "foot"
+    },
+    {
+        "name": "Cimetière de Saint-Ouen",
+        "icon": "cimetery.png",
+        "locationX": 240,
+        "locationY": 605,
+        "class": "cimetery"
+    },
+    {
+        "name": "Gare : Stade de France - Saint Denis",
+        "icon": "train.png",
+        "locationX": 265,
+        "locationY": 390,
+        "class": "train"
+    },
+    {
+        "name": "Gare : Saint Denis RER",
+        "icon": "train.png",
+        "locationX": 214,
+        "locationY": 97,
+        "class": "train"
+    },
+    {
+        "name": "Parc de la Legion d'Honneur",
+        "icon": "parc.png",
+        "locationX": 395,
+        "locationY": 122,
+        "class": "parc"
+    },
+    {
+        "name": "Fort de l'Est",
+        "icon": "fort.png",
+        "locationX": 525,
+        "locationY": 160,
+        "class": "fort"
+    },
+    {
+        "name": "Lycée Marcel Cachin",
+        "icon": "school.png",
+        "locationX": 135,
+        "locationY": 380,
+        "class": "school"
+    },
+    {
+        "name": "EICAR - École de Cinéma",
+        "icon": "school.png",
+        "locationX": 412,
+        "locationY": 645,
+        "class": "school"
+    },
+    {
+        "name": "Musée d'Art et d'Histoire <br> Paul Eluard de Saint-Denis",
+        "icon": "paint.png",
+        "locationX": 319,
+        "locationY": 148,
+        "class": "paint"
+    },
+    {
+        "name": "Basilique Cathedrale de Saint-Denis",
+        "icon": "church.png",
+        "locationX": 370,
+        "locationY": 78,
+        "class": "church"
+    },
+    {
+        "name": "Eglise protestante unie <br> Martin Luther St-Denis",
+        "icon": "church.png",
+        "locationX": 269,
+        "locationY": 53,
+        "class": "church"
+    },
+    {
+        "name": "Marché de Saint-Denis",
+        "icon": "shop.png",
+        "locationX": 355,
+        "locationY": 40,
+        "class": "shop"
+    },
+    {
+        "name": "Magasin alimentaire de Saint-Denis",
+        "icon": "shop.png",
+        "locationX": 594,
+        "locationY": 336,
+        "class": "shop"
+    }
+]

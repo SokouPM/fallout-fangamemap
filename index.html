@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Doryandry</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/9611474495.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Carte de Doryandry</h1>
+    </header>
+
+    <main>
+        <div id="doryandryMap">
+            <img id="map" src="./sources/map.png" alt="MISSING_FILE">
+            <img id="mapDistricts" class="mapDistricts" src="./sources/mapDistricts.png" alt="MISSING_FILE">
+            <div id="mapIcons">
+            </div>
+        </div>
+        <div id="mapLegend">
+            <h2>Legende</h2>
+            <table>
+                <tr>
+                    <td><i class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/landGate.png" alt="ERR::">
+                        <span></span>
+                        <p>Porte terrestre</p>
+                    </td>
+                    <td><i class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/waterGate.png" alt="ERR::">
+                        <span></span>
+                        <p>Porte maritime</p>
+                    </td>
+                    <td><i class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/railGate.png" alt="ERR::">
+                        <span></span>
+                        <p>Porte ferroviaire</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i id="toggleFoot" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/foot.png" alt="ERR::">
+                        <span></span>
+                        <p>Stade</p>
+                    </td>
+                    <td><i id="toggleShop" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/shop.png" alt="ERR::">
+                        <span></span>
+                        <p>Magasin</p>
+                    </td>
+                    <td><i id="toggleSchool" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/school.png" alt="ERR::">
+                        <span></span>
+                        <p>Ecole</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i id="toggleFort" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/fort.png" alt="ERR::">
+                        <span></span>
+                        <p>Fort</p>
+                    </td>
+                    <td><i id="toggleParc" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/parc.png" alt="ERR::">
+                        <span></span>
+                        <p>Parc</p>
+                    </td>
+                    <td><i id="toggleTrain" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/train.png" alt="ERR::">
+                        <span></span>
+                        <p>Gare</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i id="toggleCimetery" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/cimetery.png" alt="ERR::">
+                        <span></span>
+                        <p>Cimetiere</p>
+                    </td>
+                    <td><i id="toggleChurch" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/church.png" alt="ERR::">
+                        <span></span>
+                        <p>Eglise</p>
+                    </td>
+                    <td><i id="togglePaint" class="far fa-check-square"></i>
+                        <span></span>
+                        <img src="./sources/icons/paint.png" alt="ERR::">
+                        <span></span>
+                        <p>Musee</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><i id="toggleDistrict" class="far fa-check-square"></i>
+                        <span></span>
+                        <p>Districts</p>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <span id="binary"></span><span id="flashing">_</span>
+        </div>
+    </main>
+
+    <footer>
+        <p>IHM : Pierre Marquet - 2021</p>
+    </footer>
+    <script src="./js/binary.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
