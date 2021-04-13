@@ -73,7 +73,7 @@ function showNameOnHover(places, mapIconsLocation) {
 // TODO
 function toggleElements() {
 
-    // cArray switch squares :
+    // Array legend switch squares :
     let toggleSquares = document.getElementsByClassName("far"); // All squares
     ////////////
     let toggleDistrict = document.getElementById("toggleDistrict");
@@ -105,12 +105,8 @@ function toggleElements() {
 
         // For clicking on square envents
         toggleSquares[i].addEventListener('click', function () {
-            if (toggleSquares[i].classList[1] == "fa-check-square") {
 
-                toggleSquares[i].classList.replace("fa-check-square", "fa-square");
-            } else {
-                toggleSquares[i].classList.replace("fa-square", "fa-check-square");
-            }
+            toggleSquares[i].classList[1] == "fa-check-square" ? toggleSquares[i].classList.replace("fa-check-square", "fa-square") : toggleSquares[i].classList.replace("fa-square", "fa-check-square");
 
             // Map items hide / show
             // for (let i = 0; i < mapLandGate.length; i++) {
