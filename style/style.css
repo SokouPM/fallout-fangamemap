@@ -1,0 +1,177 @@
+* {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    cursor: url('../sources/mouse.png'), auto;
+    --bgrd-clr: #111c13;
+    --cntnt-clr: #62b22f;
+    --map-size: 750px;
+}
+
+body {
+    font-family: "Myriad Pro", sans-serif;
+    text-transform: uppercase;
+    background-color: var(--bgrd-clr);
+    color: var(--cntnt-clr);
+}
+
+/************** header **************/
+
+header {
+    padding: 1%;
+    background-color: var(--bgrd-color);
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+}
+
+/*************** main ***************/
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0;
+    height: 750px;
+}
+
+main #doryandryMap {
+    position: relative;
+    overflow: hidden;
+    width: var(--map-size);
+    height: var(--map-size);
+}
+
+main #doryandryMap #map {
+    width: var(--map-size);
+    height: var(--map-size);
+}
+
+main #doryandryMap #mapDistricts {
+    width: 93.5%;
+    position: absolute;
+    left: -10px;
+    top: 7px;
+}
+
+/****** map icons ********/
+
+main #doryandryMap #mapIcons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--map-size);
+    height: var(--map-size);
+}
+
+main #doryandryMap #mapIcons .icon {
+    position: absolute;
+    height: 4.5%;
+    transition: transform 1ms;
+}
+
+main #doryandryMap #mapIcons .icon:hover {
+    transform: scale(1.5);
+}
+
+/****** map legend *******/
+
+main #mapLegend {
+    margin: 0 50px;
+    width: 700px;
+}
+
+main #mapLegend h2 {
+    text-align: center;
+}
+
+main #mapLegend p {
+    text-align: left;
+}
+
+/****** binary text ******/
+
+main #mapLegend #binary {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+main #mapLegend #flashing {
+    font-weight: bold;
+    font-size: large;
+    animation-duration: 0.5s;
+    animation-name: flashing;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/****** main table *******/
+
+main #mapLegend table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+main #mapLegend table tr {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+
+main #mapLegend table tr td {
+    width: 100%;
+    padding: 2% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: var(--cntnt-clr) solid 1px;
+}
+
+main #mapLegend table tr td span {
+    width: 3%;
+}
+
+main #mapLegend table tr td img {
+    height: 100%;
+}
+
+main #mapLegend table tr td p {
+    width: 70%;
+}
+
+/************** footer **************/
+
+footer {
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer, p {
+    text-align: center;
+}
+
+/************* Mutiple **************/
+
+header, footer {
+    background-color: var(--bgrd-clr);
+}
+
+/************** for JS **************/
+
+.none {
+    display: none;
+}
